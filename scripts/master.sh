@@ -38,7 +38,7 @@ kubeadm token create --print-join-command > $config_path/join.sh
 
 curl https://raw.githubusercontent.com/projectcalico/calico/v${CALICO_VERSION}/manifests/calico.yaml -O
 
-kubectl apply -f calico.yaml
+# kubectl apply -f calico.yaml
 
 sudo -i -u vagrant bash << EOF
 whoami
